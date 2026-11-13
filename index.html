@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevik — Formations en improvisation | Trouvez l'étoile en vous</title>
+  <meta name="description" content="Formations en improvisation personnalisées avec Kevik (Keven Perron), improvisateur et comédien. Créativité, spontanéité, expression : trouvez l'étoile en vous.">
+  <meta name="theme-color" content="#07060d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:title" content="Kevik — Formations en improvisation">
+  <meta property="og:description" content="Des formations pour développer votre créativité, votre confiance et votre talent en improvisation. Trouvez l'étoile en vous.">
+  <meta property="og:image" content="images/hero-scene.jpg">
+  <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="ciel" aria-hidden="true"></canvas>
+
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="entete" id="entete">
+    <div class="entete__inner">
+      <a class="logo" href="#accueil" aria-label="Kevik — retour à l'accueil">
+        <svg class="logo__etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.6 7.1 7.4.3-5.8 4.6 2 7.2L12 16.5l-6.2 4.2 2-7.2L2 8.9l7.4-.3z"/></svg>
+        <span>KEVIK</span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#qui-suis-je">Qui suis-je&nbsp;?</a>
+        <a href="#approche">Mon approche</a>
+        <a href="#formations">Formations</a>
+        <a class="btn btn--petit" href="#contact">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+      <div class="conteneur hero__grille">
+        <div class="hero__texte">
+          <p class="surtitre revele">Formations en improvisation</p>
+          <h1 class="hero__titre revele">
+            <span class="hero__nom">Kevik</span>
+          </h1>
+          <p class="slogan revele">
+            <svg class="slogan__etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.6 7.1 7.4.3-5.8 4.6 2 7.2L12 16.5l-6.2 4.2 2-7.2L2 8.9l7.4-.3z"/></svg>
+            Trouvez l'étoile en vous
+          </p>
+          <p class="valeurs revele">Créativité <span>✦</span> Spontanéité <span>✦</span> Expression</p>
+          <div class="hero__actions revele">
+            <a class="btn" href="#contact">Me contacter <span aria-hidden="true">→</span></a>
+            <a class="btn btn--contour" href="#approche">Découvrir mon approche</a>
+          </div>
+        </div>
+        <div class="hero__photos revele">
+          <figure class="cadre cadre--principal">
+            <img src="images/hero-scene.jpg" alt="Trois improvisateurs sur scène, dont un coiffé d'un foulard jaune, en pleine improvisation" width="1075" height="580" fetchpriority="high">
+          </figure>
+          <figure class="cadre cadre--secondaire">
+            <img src="images/hero-troupe.jpg" alt="Une équipe d'improvisateurs sous les projecteurs" width="467" height="309">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="potentiel-intro">
+      <div class="conteneur etroit centre">
+        <h2 class="grand-enonce revele">Votre potentiel va bien au-delà de ce que vous imaginez.</h2>
+        <p class="accent revele">Des formations pour développer votre créativité, votre confiance et votre talent en improvisation.</p>
+        <p class="devise revele">Apprendre. Oser. Improviser.</p>
+      </div>
+    </section>
+
+    <!-- QUI SUIS-JE -->
+    <section class="section" id="qui-suis-je">
+      <div class="conteneur deux-colonnes">
+        <figure class="cadre cadre--portrait revele">
+          <img src="images/kevik-portrait.jpg" alt="Kevik sur scène, éclairé d'une lumière rouge" width="1075" height="1276" loading="lazy">
+        </figure>
+        <div>
+          <h2 class="titre-section revele">Qui suis-je&nbsp;?</h2>
+          <p class="sous-titre revele">Apprendre auprès de quelqu'un qui a fait ses preuves.</p>
+          <div class="texte revele">
+            <p>Je suis <strong>Keven Perron</strong>, improvisateur, comédien et créateur de contenu humoristique connu sous le nom de <strong>Kevik</strong>.</p>
+            <p>L'improvisation fait partie de mon parcours depuis plusieurs années. Au fil de mon cheminement, j'ai eu l'occasion de me démarquer sur différentes scènes et de recevoir plusieurs distinctions qui témoignent de mes aptitudes et de mon travail.</p>
+            <p>Parmi mes reconnaissances, on retrouve notamment les titres de joueur par excellence et joueur puncheur de plusieurs ligues, joueur étoile, beaucoup de trophées et plusieurs autres.</p>
+            <p>Ces expériences m'ont permis de développer une compréhension approfondie de l'improvisation sous toutes ses formes, autant sur le plan technique que pratique.</p>
+            <p>Mon objectif est simple&nbsp;: vous transmettre ce que j'ai appris et ce qu'on m'a appris. Je vous donnerai donc des outils concrets pour vous aider à repousser vos limites et vous permettre de développer votre plein potentiel.</p>
+          </div>
+          <ul class="distinctions revele" aria-label="Distinctions">
+            <li><span aria-hidden="true">★</span> Joueur par excellence</li>
+            <li><span aria-hidden="true">★</span> Joueur puncheur</li>
+            <li><span aria-hidden="true">★</span> Joueur étoile</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="conteneur galerie revele">
+        <figure class="cadre">
+          <img src="images/atelier.jpg" alt="Kevik lors d'un atelier d'improvisation" width="1059" height="704" loading="lazy">
+        </figure>
+        <figure class="cadre">
+          <img src="images/scene-duo.jpg" alt="Deux improvisateurs en chandail de hockey sur une scène d'improvisation" width="1060" height="703" loading="lazy">
+          <figcaption>Photo&nbsp;: Brandon Shink Photographe</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- DÉVELOPPER SON POTENTIEL -->
+    <section class="section section--voile" id="potentiel">
+      <div class="conteneur">
+        <h2 class="titre-section centre revele">Développer son potentiel</h2>
+        <div class="piliers">
+          <article class="pilier revele">
+            <span class="pilier__icone" aria-hidden="true">✦</span>
+            <h3>Développer plutôt que limiter</h3>
+            <p>Encourager les participants à exploiter leur imagination et à oser proposer des idées.</p>
+          </article>
+          <article class="pilier revele">
+            <span class="pilier__icone" aria-hidden="true">✦</span>
+            <h3>Comprendre plutôt que simplement exécuter</h3>
+            <p>Enseigner les mécanismes derrière une bonne scène, un personnage intéressant ou un univers crédible.</p>
+          </article>
+          <article class="pilier revele">
+            <span class="pilier__icone" aria-hidden="true">✦</span>
+            <h3>Expérimenter plutôt que craindre l'erreur</h3>
+            <p>Apprendre par la pratique, essayer, se tromper et recommencer.</p>
+          </article>
+          <article class="pilier revele">
+            <span class="pilier__icone" aria-hidden="true">✦</span>
+            <h3>Développer un improvisateur complet</h3>
+            <p>Travailler autant l'écoute, le jeu physique et l'interprétation que la créativité, le meublage et l'humour.</p>
+          </article>
+        </div>
+        <p class="et-plus centre revele">… et bien plus encore.</p>
+      </div>
+    </section>
+
+    <!-- MON APPROCHE -->
+    <section class="section" id="approche">
+      <div class="conteneur">
+        <h2 class="titre-section revele">Mon approche</h2>
+        <div class="deux-colonnes deux-colonnes--inverse">
+          <div class="texte revele">
+            <p class="sous-titre">Bien plus qu'apprendre à improviser.</p>
+            <p>L'improvisation est un art qui offre des possibilités presque infinies. Mon approche repose sur une conviction&nbsp;: chacun possède un potentiel qui ne demande qu'à être découvert et développé.</p>
+            <p>Animé par une véritable passion pour cette discipline, je souhaite avant tout transmettre ce que j'ai appris, partager mon expérience et donner aux autres le goût de se dépasser.</p>
+            <p>À travers mes formations, je souhaite accompagner chaque participant dans sa progression, lui permettre d'acquérir des outils concrets, de développer ses compétences et surtout, de découvrir tout ce dont il est capable.</p>
+            <p>Je crois qu'apprendre doit aussi être synonyme de plaisir, d'expérimentation et de dépassement de soi. On apprend en osant, en essayant, en faisant des erreurs et en repoussant progressivement ses propres limites.</p>
+            <p>Ma plus grande satisfaction&nbsp;? Voir mes participants évoluer, prendre confiance en eux, accomplir des choses qu'ils ne se croyaient pas capables de réaliser et être fiers du chemin parcouru.</p>
+          </div>
+          <figure class="cadre revele">
+            <img src="images/approche.jpg" alt="Kevik pointe vers le ciel pendant une improvisation sur scène" width="1075" height="712" loading="lazy">
+          </figure>
+        </div>
+        <blockquote class="citation revele">
+          <p>Parce que mon objectif n'est pas seulement de faire de vous de meilleurs improvisateurs. C'est de vous aider à découvrir l'improvisateur que vous pouvez devenir.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CE QUE VOUS APPRENDREZ -->
+    <section class="section section--voile" id="apprendre">
+      <div class="conteneur">
+        <h2 class="titre-section centre revele">Ce que vous apprendrez</h2>
+        <ul class="apprentissages revele">
+          <li>Création de personnages</li>
+          <li>Construction de scènes et d'histoires</li>
+          <li>Développement de l'imagination</li>
+          <li>Écoute et connexion avec les autres</li>
+          <li>Spontanéité et réactivité</li>
+          <li>Expression des émotions</li>
+          <li>Jeu physique et langage corporel</li>
+          <li>Humour et sens de la répartie</li>
+          <li>Techniques avancées d'improvisation</li>
+          <li>Confiance et présence sur scène</li>
+        </ul>
+        <p class="et-plus centre revele">Et bien plus encore&nbsp;!</p>
+        <div class="galerie revele">
+          <figure class="cadre">
+            <img src="images/apprendre-2.jpg" alt="Deux improvisateurs en action pendant un match d'improvisation" width="597" height="312" loading="lazy">
+          </figure>
+          <figure class="cadre">
+            <img src="images/apprendre-1.jpg" alt="Des improvisateurs attendent leur tour derrière la bande de la patinoire d'improvisation" width="522" height="326" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATIONS ADAPTÉES -->
+    <section class="section" id="formations">
+      <div class="conteneur deux-colonnes">
+        <div>
+          <h2 class="titre-section revele">Des formations adaptées à vos besoins</h2>
+          <div class="texte revele">
+            <p class="sous-titre">Chaque improvisateur est différent.</p>
+            <p>C'est pourquoi je privilégie une approche personnalisée plutôt que des formations préétablies. Que vous soyez débutant, intermédiaire ou que vous souhaitiez perfectionner certains aspects de votre jeu, les formations sont conçues en fonction de vos objectifs, de votre expérience et de vos besoins.</p>
+            <p>Vous choisissez vos objectifs, je construis le chemin pour les atteindre. Les formations peuvent être offertes individuellement ou en groupe, selon vos préférences et les possibilités.</p>
+            <p>Vous avez une demande particulière&nbsp;? N'hésitez pas à me contacter. Nous pourrons élaborer une formation qui vous ressemble.</p>
+          </div>
+          <ul class="etiquettes revele" aria-label="Formules offertes">
+            <li>Débutant</li>
+            <li>Intermédiaire</li>
+            <li>Perfectionnement</li>
+            <li>Individuel</li>
+            <li>En groupe</li>
+          </ul>
+        </div>
+        <div class="mosaique revele">
+          <figure class="cadre">
+            <img src="images/formations-1.jpg" alt="Des improvisateurs superposent leurs mains avant un match" width="384" height="225" loading="lazy">
+          </figure>
+          <figure class="cadre">
+            <img src="images/formations-2.jpg" alt="Deux improvisateurs sur une scène au rideau rouge" width="354" height="224" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="conteneur deux-colonnes">
+        <div class="contact__texte">
+          <h2 class="titre-section revele">Prêt à trouver l'étoile en vous&nbsp;?</h2>
+          <p class="accent revele">Une envie d'apprendre, de progresser ou de repousser vos limites&nbsp;? Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+          <div class="contact__actions revele">
+            <a class="btn btn--grand" href="mailto:improkevik@gmail.com?subject=Demande%20de%20formation%20en%20improvisation&amp;body=Bonjour%20Kevik%2C%0A%0AJ%E2%80%99aimerais%20en%20savoir%20plus%20sur%20vos%20formations%20en%20improvisation.%0A%0ANom%20%3A%0AFormation%20individuelle%20ou%20en%20groupe%20%3A%0ANiveau%20(d%C3%A9butant%2C%20interm%C3%A9diaire%2C%20avanc%C3%A9)%20%3A%0AMes%20objectifs%20%3A%0AMes%20disponibilit%C3%A9s%20%3A%0A%0AMerci%20!">
+              Me contacter par courriel <span aria-hidden="true">→</span>
+            </a>
+            <div class="courriel">
+              <span>ou écrivez directement à</span>
+              <button type="button" class="courriel__copier" id="copier" data-courriel="improkevik@gmail.com">
+                improkevik@gmail.com
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              </button>
+              <span class="courriel__statut" id="copier-statut" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+        <figure class="cadre cadre--portrait revele">
+          <img src="images/trophee.jpg" alt="Kevik tenant un trophée en forme d'étoile" width="1075" height="1342" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur pied__inner">
+      <div>
+        <p class="pied__logo">KEVIK <span>✦</span></p>
+        <p class="pied__sous">Formations en improvisation — Trouvez l'étoile en vous</p>
+      </div>
+      <nav class="pied__nav" aria-label="Navigation du pied de page">
+        <a href="#qui-suis-je">Qui suis-je&nbsp;?</a>
+        <a href="#approche">Mon approche</a>
+        <a href="#formations">Formations</a>
+        <a href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </nav>
+    </div>
+    <p class="pied__copyright conteneur">© <span id="annee">2026</span> Kevik. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
