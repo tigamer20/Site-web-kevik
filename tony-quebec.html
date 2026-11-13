@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tony_quebec — Création de sites web</title>
+  <meta name="description" content="Ce site a été fait par Tony_quebec. Vous aimeriez avoir votre propre site web? Écrivez à tonyquebec.off@gmail.com.">
+  <meta name="author" content="Tony_quebec">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:site_name" content="Kevik — Formations en improvisation">
+  <meta property="og:title" content="Tony_quebec — Création de sites web">
+  <meta property="og:description" content="Ce site a été fait par Tony_quebec. Vous aimeriez avoir votre propre site web? Écrivez à tonyquebec.off@gmail.com.">
+  <meta property="og:image" content="images/hero-scene.jpg">
+  <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="ciel" aria-hidden="true"></canvas>
+
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="entete__inner">
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+        <a href="mon-approche.html">Mon approche</a>
+        <a href="formations.html">Formations</a>
+        <a class="nav__contact" href="contact.html">Me contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="contact conteneur">
+      <div class="contact__texte">
+        <p class="etiquette">Création de sites web</p>
+        <h1 class="h1">Vous aussi, vous voulez <em>votre</em> site web&nbsp;?</h1>
+        <p class="intro">Ce site a été fait par Tony_quebec. Écrivez-moi pour faire une demande et je créerai votre site web.</p>
+        <a class="btn btn--grand" href="mailto:tonyquebec.off@gmail.com">Envoyer un courriel</a>
+        <div class="contact__courriel">
+          <span>Ou directement&nbsp;:</span>
+          <a href="mailto:tonyquebec.off@gmail.com">tonyquebec.off@gmail.com</a>
+          <button type="button" class="copier" id="copier" data-courriel="tonyquebec.off@gmail.com">Copier</button>
+          <span class="copier__statut" id="copier-statut" role="status" aria-live="polite"></span>
+        </div>
+        <p class="contact__note"><a href="index.html">← Retour au site de Kevik</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par <a class="pied__credit" href="tony-quebec.html">Tony_quebec</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

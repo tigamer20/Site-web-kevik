@@ -602,3 +602,9 @@ em { font-family: var(--f-accent); font-style: italic; font-weight: 400; color: 
   .bandeau__piste { animation: none; }
   * { transition: none !important; }
 }
+
+/* Crédit du site */
+.pied__credit { color: var(--texte); text-underline-offset: 3px; }
+.pied__credit:hover { color: var(--or); }
+.contact__note a { color: var(--texte); text-decoration: none; }
+.contact__note a:hover { color: var(--or); }
