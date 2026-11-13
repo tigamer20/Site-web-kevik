@@ -6,7 +6,7 @@
   <title>Formations — Kevik, formations en improvisation</title>
   <meta name="description" content="Des formations en improvisation adaptées à vos besoins : individuelles ou en groupe, du niveau débutant au perfectionnement.">
   <meta name="author" content="Tony_quebec">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Kevik — Formations en improvisation">
@@ -16,7 +16,7 @@
   <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="entete" id="entete">
+  <header class="entete">
     <div class="entete__inner">
-      <a class="logo" href="index.html">Kevik</a>
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
@@ -41,15 +41,24 @@
   <main id="contenu">
 
     <header class="titre-page conteneur">
-      <h1 class="grand-titre">Des formations adaptées à vos besoins</h1>
-      <p class="chapeau">Chaque improvisateur est différent.</p>
+      <p class="etiquette">Formations</p>
+      <h1 class="h1">Des formations adaptées à vos besoins</h1>
+      <p class="intro">Chaque improvisateur est différent.</p>
     </header>
 
     <section class="formations conteneur">
       <div class="formations__texte">
+        <p class="grand-texte">Vous choisissez vos objectifs, <em>je construis le chemin</em> pour les atteindre.</p>
         <p>C'est pourquoi je privilégie une approche personnalisée plutôt que des formations préétablies. Que vous soyez débutant, intermédiaire ou que vous souhaitiez perfectionner certains aspects de votre jeu, les formations sont conçues en fonction de vos objectifs, de votre expérience et de vos besoins.</p>
-        <p>Vous choisissez vos objectifs, je construis le chemin pour les atteindre. Les formations peuvent être offertes <em>individuellement ou en groupe</em>, selon vos préférences et les possibilités.</p>
+        <p>Les formations peuvent être offertes individuellement ou en groupe, selon vos préférences et les possibilités.</p>
         <p>Vous avez une demande particulière&nbsp;? N'hésitez pas à me <a href="contact.html">contacter</a>. Nous pourrons élaborer une formation qui vous ressemble.</p>
+        <ul class="puces" aria-label="Niveaux et formules">
+          <li>Débutant</li>
+          <li>Intermédiaire</li>
+          <li>Perfectionnement</li>
+          <li>Individuel</li>
+          <li>En groupe</li>
+        </ul>
       </div>
       <div class="formations__photos">
         <figure><img src="images/formations-1.jpg" alt="Des improvisateurs superposent leurs mains avant un match" width="384" height="225" fetchpriority="high"></figure>
@@ -58,52 +67,55 @@
     </section>
 
     <section class="apprendre conteneur" id="apprendre">
-      <h2 class="grand-titre">Ce que vous apprendrez</h2>
-      <div class="apprendre__grille">
-        <ul class="liste-points">
-          <li>Création de personnages</li>
-          <li>Construction de scènes et d'histoires</li>
-          <li>Développement de l'imagination</li>
-          <li>Écoute et connexion avec les autres</li>
-          <li>Spontanéité et réactivité</li>
-        </ul>
+      <h2 class="h2">Ce que vous apprendrez</h2>
+      <ol class="apprendre__liste">
+        <li>Création de personnages</li>
+        <li>Construction de scènes et d'histoires</li>
+        <li>Développement de l'imagination</li>
+        <li>Écoute et connexion avec les autres</li>
+        <li>Spontanéité et réactivité</li>
+        <li>Expression des émotions</li>
+        <li>Jeu physique et langage corporel</li>
+        <li>Humour et sens de la répartie</li>
+        <li>Techniques avancées d'improvisation</li>
+        <li>Confiance et présence sur scène</li>
+      </ol>
+      <p class="et-plus">Et bien plus encore&nbsp;!</p>
+      <div class="photos">
         <figure><img src="images/apprendre-2.jpg" alt="Deux improvisateurs en action pendant un match d'improvisation" width="597" height="312" loading="lazy"></figure>
         <figure><img src="images/apprendre-1.jpg" alt="Des improvisateurs attendent leur tour derrière la bande de la patinoire d'improvisation" width="522" height="326" loading="lazy"></figure>
-        <ul class="liste-points">
-          <li>Expression des émotions</li>
-          <li>Jeu physique et langage corporel</li>
-          <li>Humour et sens de la répartie</li>
-          <li>Techniques avancées d'improvisation</li>
-          <li>Confiance et présence sur scène</li>
-        </ul>
       </div>
-      <p class="et-plus">Et bien plus encore&nbsp;!</p>
     </section>
 
-    <section class="appel">
-      <div class="conteneur etroit centre">
-        <h2 class="grand-titre">Prêt à trouver l'étoile en vous&nbsp;?</h2>
-        <p class="chapeau">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+    <section class="appel conteneur">
+      <div class="appel__boite">
+        <h2 class="h2">Prêt à trouver <em>l'étoile</em> en vous&nbsp;?</h2>
+        <p class="intro">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
         <a class="btn" href="contact.html">Me contacter</a>
       </div>
     </section>
   </main>
 
   <footer class="pied">
-    <div class="conteneur pied__inner">
-      <a class="pied__logo" href="index.html">Kevik</a>
-      <nav class="pied__nav" aria-label="Pages du site">
-        <a href="index.html">Accueil</a>
-        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
-        <a href="mon-approche.html">Mon approche</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Me contacter</a>
-      </nav>
-      <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-    </div>
-    <div class="conteneur pied__bas">
-      <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
-      <p>Site web fait par Tony_quebec</p>
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par Tony_quebec</p>
+      </div>
     </div>
   </footer>
 

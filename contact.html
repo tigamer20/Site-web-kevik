@@ -6,7 +6,7 @@
   <title>Me contacter — Kevik, formations en improvisation</title>
   <meta name="description" content="Prêt à trouver l'étoile en vous ? Écrivez à Kevik à improkevik@gmail.com pour construire une formation en improvisation adaptée à vos besoins.">
   <meta name="author" content="Tony_quebec">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Kevik — Formations en improvisation">
@@ -16,7 +16,7 @@
   <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="entete" id="entete">
+  <header class="entete">
     <div class="entete__inner">
-      <a class="logo" href="index.html">Kevik</a>
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
@@ -42,14 +42,16 @@
 
     <section class="contact conteneur">
       <div class="contact__texte">
-        <h1 class="grand-titre">Prêt à trouver l'étoile en vous&nbsp;?</h1>
-        <p class="chapeau">Une envie d'apprendre, de progresser ou de repousser vos limites&nbsp;? Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
-        <a class="btn" href="mailto:improkevik@gmail.com?subject=Demande%20de%20formation%20en%20improvisation&amp;body=Bonjour%20Kevik%2C%0A%0AJ%E2%80%99aimerais%20en%20savoir%20plus%20sur%20vos%20formations%20en%20improvisation.%0A%0ANom%20%3A%0AFormation%20individuelle%20ou%20en%20groupe%20%3A%0ANiveau%20(d%C3%A9butant%2C%20interm%C3%A9diaire%2C%20avanc%C3%A9)%20%3A%0AMes%20objectifs%20%3A%0AMes%20disponibilit%C3%A9s%20%3A%0A%0AMerci%20!">Me contacter</a>
-        <p class="contact__courriel">
-          Ou écrivez directement à <a href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-          <button type="button" class="copier" id="copier" data-courriel="improkevik@gmail.com">copier l'adresse</button>
+        <p class="etiquette">Me contacter</p>
+        <h1 class="h1">Prêt à trouver <em>l'étoile</em> en vous&nbsp;?</h1>
+        <p class="intro">Une envie d'apprendre, de progresser ou de repousser vos limites&nbsp;? Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+        <a class="btn btn--grand" href="mailto:improkevik@gmail.com?subject=Demande%20de%20formation%20en%20improvisation&amp;body=Bonjour%20Kevik%2C%0A%0AJ%E2%80%99aimerais%20en%20savoir%20plus%20sur%20vos%20formations%20en%20improvisation.%0A%0ANom%20%3A%0AFormation%20individuelle%20ou%20en%20groupe%20%3A%0ANiveau%20(d%C3%A9butant%2C%20interm%C3%A9diaire%2C%20avanc%C3%A9)%20%3A%0AMes%20objectifs%20%3A%0AMes%20disponibilit%C3%A9s%20%3A%0A%0AMerci%20!">Écrire à Kevik</a>
+        <div class="contact__courriel">
+          <span>Ou directement&nbsp;:</span>
+          <a href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+          <button type="button" class="copier" id="copier" data-courriel="improkevik@gmail.com">Copier</button>
           <span class="copier__statut" id="copier-statut" role="status" aria-live="polite"></span>
-        </p>
+        </div>
         <p class="contact__note">Dans votre courriel, parlez-moi de votre expérience, de votre niveau, de ce que vous aimeriez travailler et si vous pensez à une formation individuelle ou en groupe.</p>
       </div>
       <figure class="contact__photo"><img src="images/trophee.jpg" alt="Kevik tenant un trophée en forme d'étoile" width="1075" height="1342" fetchpriority="high"></figure>
@@ -57,20 +59,25 @@
   </main>
 
   <footer class="pied">
-    <div class="conteneur pied__inner">
-      <a class="pied__logo" href="index.html">Kevik</a>
-      <nav class="pied__nav" aria-label="Pages du site">
-        <a href="index.html">Accueil</a>
-        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
-        <a href="mon-approche.html">Mon approche</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Me contacter</a>
-      </nav>
-      <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-    </div>
-    <div class="conteneur pied__bas">
-      <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
-      <p>Site web fait par Tony_quebec</p>
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par Tony_quebec</p>
+      </div>
     </div>
   </footer>
 

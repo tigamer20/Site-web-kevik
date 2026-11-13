@@ -6,7 +6,7 @@
   <title>Mon approche — Kevik, formations en improvisation</title>
   <meta name="description" content="Bien plus qu'apprendre à improviser : une approche basée sur le plaisir, l'expérimentation et le dépassement de soi.">
   <meta name="author" content="Tony_quebec">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Kevik — Formations en improvisation">
@@ -16,7 +16,7 @@
   <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="entete" id="entete">
+  <header class="entete">
     <div class="entete__inner">
-      <a class="logo" href="index.html">Kevik</a>
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
@@ -41,23 +41,26 @@
   <main id="contenu">
 
     <header class="titre-page conteneur">
-      <h1 class="grand-titre">Mon approche</h1>
-      <p class="chapeau">Bien plus qu'apprendre à improviser.</p>
+      <p class="etiquette">Ma philosophie</p>
+      <h1 class="h1">Mon approche</h1>
+      <p class="intro">Bien plus qu'apprendre à improviser.</p>
     </header>
 
     <figure class="photo-large conteneur"><img src="images/approche.jpg" alt="Kevik pointe vers le ciel pendant une improvisation sur scène" width="1075" height="712" fetchpriority="high"></figure>
 
-    <section class="conteneur etroit texte-centre">
-      <p>L'improvisation est un art qui offre des possibilités presque infinies. Mon approche repose sur une conviction&nbsp;: chacun possède un potentiel qui ne demande qu'à être découvert et développé.</p>
-      <p>Animé par une véritable passion pour cette discipline, je souhaite avant tout transmettre ce que j'ai appris, partager mon expérience et donner aux autres le goût de se dépasser.</p>
-      <p>À travers mes formations, je souhaite accompagner chaque participant dans sa progression, lui permettre d'acquérir des outils concrets, de développer ses compétences et surtout, de découvrir tout ce dont il est capable.</p>
-      <p>Je crois qu'apprendre doit aussi être synonyme de plaisir, d'expérimentation et de dépassement de soi. On apprend en osant, en essayant, en faisant des erreurs et en repoussant progressivement ses propres limites.</p>
-      <p>Ma plus grande satisfaction&nbsp;? Voir mes participants évoluer, prendre confiance en eux, accomplir des choses qu'ils ne se croyaient pas capables de réaliser et être fiers du chemin parcouru.</p>
-      <p class="citation">Parce que mon objectif n'est pas seulement de faire de vous de meilleurs improvisateurs. C'est de vous aider à découvrir l'improvisateur que vous pouvez devenir.</p>
+    <section class="texte-approche conteneur">
+      <p class="grand-texte">L'improvisation est un art qui offre des possibilités presque infinies. Mon approche repose sur une conviction&nbsp;: <em>chacun possède un potentiel qui ne demande qu'à être découvert et développé.</em></p>
+      <div class="colonnes">
+        <p>Animé par une véritable passion pour cette discipline, je souhaite avant tout transmettre ce que j'ai appris, partager mon expérience et donner aux autres le goût de se dépasser.</p>
+        <p>À travers mes formations, je souhaite accompagner chaque participant dans sa progression, lui permettre d'acquérir des outils concrets, de développer ses compétences et surtout, de découvrir tout ce dont il est capable.</p>
+        <p>Je crois qu'apprendre doit aussi être synonyme de plaisir, d'expérimentation et de dépassement de soi. On apprend en osant, en essayant, en faisant des erreurs et en repoussant progressivement ses propres limites.</p>
+        <p>Ma plus grande satisfaction&nbsp;? Voir mes participants évoluer, prendre confiance en eux, accomplir des choses qu'ils ne se croyaient pas capables de réaliser et être fiers du chemin parcouru.</p>
+      </div>
+      <blockquote class="citation">Parce que mon objectif n'est pas seulement de faire de vous de meilleurs improvisateurs. C'est de vous aider à découvrir <em>l'improvisateur que vous pouvez devenir.</em></blockquote>
     </section>
 
     <section class="potentiel conteneur" id="potentiel">
-      <h2 class="grand-titre centre">Développer son potentiel</h2>
+      <h2 class="h2">Développer son potentiel</h2>
       <dl class="principes">
         <div>
           <dt>Développer plutôt que limiter</dt>
@@ -79,30 +82,35 @@
       <p class="et-plus">et bien plus encore…</p>
     </section>
 
-    <section class="appel">
-      <div class="conteneur etroit centre">
-        <h2 class="grand-titre">Prêt à trouver l'étoile en vous&nbsp;?</h2>
-        <p class="chapeau">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+    <section class="appel conteneur">
+      <div class="appel__boite">
+        <h2 class="h2">Prêt à trouver <em>l'étoile</em> en vous&nbsp;?</h2>
+        <p class="intro">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
         <a class="btn" href="contact.html">Me contacter</a>
       </div>
     </section>
   </main>
 
   <footer class="pied">
-    <div class="conteneur pied__inner">
-      <a class="pied__logo" href="index.html">Kevik</a>
-      <nav class="pied__nav" aria-label="Pages du site">
-        <a href="index.html">Accueil</a>
-        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
-        <a href="mon-approche.html">Mon approche</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Me contacter</a>
-      </nav>
-      <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-    </div>
-    <div class="conteneur pied__bas">
-      <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
-      <p>Site web fait par Tony_quebec</p>
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par Tony_quebec</p>
+      </div>
     </div>
   </footer>
 

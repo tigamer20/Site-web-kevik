@@ -6,7 +6,7 @@
   <title>Qui suis-je ? — Kevik, improvisateur et comédien</title>
   <meta name="description" content="Keven Perron, alias Kevik : improvisateur, comédien et créateur de contenu humoristique. Joueur par excellence, joueur puncheur, joueur étoile.">
   <meta name="author" content="Tony_quebec">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Kevik — Formations en improvisation">
@@ -16,7 +16,7 @@
   <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="entete" id="entete">
+  <header class="entete">
     <div class="entete__inner">
-      <a class="logo" href="index.html">Kevik</a>
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
@@ -40,12 +40,16 @@
 
   <main id="contenu">
 
+    <header class="titre-page conteneur">
+      <p class="etiquette">Keven Perron, alias Kevik</p>
+      <h1 class="h1">Qui suis-je&nbsp;?</h1>
+      <p class="intro">Apprendre auprès de quelqu'un qui a fait ses preuves.</p>
+    </header>
+
     <section class="bio conteneur">
       <figure class="bio__photo"><img src="images/kevik-portrait.jpg" alt="Kevik sur scène, éclairé d'une lumière rouge" width="1075" height="1276" fetchpriority="high"></figure>
       <div class="bio__texte">
-        <h1 class="grand-titre">Qui suis-je&nbsp;?</h1>
-        <p class="chapeau">Apprendre auprès de quelqu'un qui a fait ses preuves.</p>
-        <p>Je suis Keven Perron, improvisateur, comédien et créateur de contenu humoristique connu sous le nom de Kevik.</p>
+        <p class="grand-texte">Je suis Keven Perron, improvisateur, comédien et créateur de contenu humoristique connu sous le nom de <em>Kevik</em>.</p>
         <p>L'improvisation fait partie de mon parcours depuis plusieurs années. Au fil de mon cheminement, j'ai eu l'occasion de me démarquer sur différentes scènes et de recevoir plusieurs distinctions qui témoignent de mes aptitudes et de mon travail.</p>
         <p>Parmi mes reconnaissances, on retrouve notamment les titres de joueur par excellence et joueur puncheur de plusieurs ligues, joueur étoile, beaucoup de trophées et plusieurs autres.</p>
         <p>Ces expériences m'ont permis de développer une compréhension approfondie de l'improvisation sous toutes ses formes, autant sur le plan technique que pratique.</p>
@@ -53,16 +57,14 @@
       </div>
     </section>
 
-    <section class="palmares">
-      <div class="conteneur">
-        <h2 class="palmares__intro">Parmi mes reconnaissances</h2>
-        <ul class="palmares__liste">
-          <li>Joueur par excellence</li>
-          <li>Joueur puncheur</li>
-          <li>Joueur étoile</li>
-          <li>Beaucoup de trophées</li>
-        </ul>
-      </div>
+    <section class="palmares conteneur">
+      <h2 class="etiquette">Parmi mes reconnaissances</h2>
+      <ul class="palmares__liste">
+        <li>Joueur par excellence</li>
+        <li>Joueur puncheur</li>
+        <li>Joueur <em>étoile</em></li>
+        <li>Beaucoup de trophées</li>
+      </ul>
     </section>
 
     <section class="photos conteneur">
@@ -70,30 +72,35 @@
       <figure><img src="images/scene-duo.jpg" alt="Deux improvisateurs en chandail de hockey sur une scène d'improvisation" width="1060" height="703" loading="lazy"><figcaption>Photo&nbsp;: Brandon Shink Photographe</figcaption></figure>
     </section>
 
-    <section class="appel">
-      <div class="conteneur etroit centre">
-        <h2 class="grand-titre">Prêt à trouver l'étoile en vous&nbsp;?</h2>
-        <p class="chapeau">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+    <section class="appel conteneur">
+      <div class="appel__boite">
+        <h2 class="h2">Prêt à trouver <em>l'étoile</em> en vous&nbsp;?</h2>
+        <p class="intro">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
         <a class="btn" href="contact.html">Me contacter</a>
       </div>
     </section>
   </main>
 
   <footer class="pied">
-    <div class="conteneur pied__inner">
-      <a class="pied__logo" href="index.html">Kevik</a>
-      <nav class="pied__nav" aria-label="Pages du site">
-        <a href="index.html">Accueil</a>
-        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
-        <a href="mon-approche.html">Mon approche</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Me contacter</a>
-      </nav>
-      <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-    </div>
-    <div class="conteneur pied__bas">
-      <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
-      <p>Site web fait par Tony_quebec</p>
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par Tony_quebec</p>
+      </div>
     </div>
   </footer>
 

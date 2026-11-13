@@ -6,7 +6,7 @@
   <title>Kevik — Formations en improvisation | Trouvez l'étoile en vous</title>
   <meta name="description" content="Formations en improvisation personnalisées avec Kevik (Keven Perron), improvisateur et comédien. Créativité, spontanéité, expression : trouvez l'étoile en vous.">
   <meta name="author" content="Tony_quebec">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:site_name" content="Kevik — Formations en improvisation">
@@ -16,7 +16,7 @@
   <link rel="icon" href="images/etoile.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italiana&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
 
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="entete" id="entete">
+  <header class="entete">
     <div class="entete__inner">
-      <a class="logo" href="index.html">Kevik</a>
+      <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
       <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Navigation principale">
         <a href="index.html" aria-current="page">Accueil</a>
@@ -40,84 +40,79 @@
 
   <main id="contenu">
 
-    <section class="affiche conteneur">
-      <figure class="affiche__photo"><img src="images/hero-scene.jpg" alt="Trois improvisateurs sur scène, dont un coiffé d'un foulard jaune, en pleine improvisation" width="1075" height="580" fetchpriority="high"></figure>
-      <div class="affiche__titre">
-        <h1><span class="affiche__nom">Kevik</span><span class="affiche__sous">Formations en improvisation</span></h1>
-        <p class="slogan">Trouvez l'étoile en vous</p>
-        <a class="btn" href="contact.html">Me contacter</a>
+    <section class="hero conteneur">
+      <p class="etiquette">Kevik — Formations en improvisation</p>
+      <h1 class="hero__titre">Trouvez <em>l'étoile</em> en&nbsp;vous.</h1>
+      <div class="hero__bas">
+        <p class="intro">Des formations pour développer votre créativité, votre confiance et votre talent en improvisation.</p>
+        <div class="hero__actions">
+          <a class="btn" href="contact.html">Me contacter</a>
+          <a class="btn btn--ligne" href="formations.html">Les formations</a>
+        </div>
       </div>
+      <figure class="hero__photo"><img src="images/hero-scene.jpg" alt="Trois improvisateurs sur scène, dont un coiffé d'un foulard jaune, en pleine improvisation" width="1075" height="580" fetchpriority="high"></figure>
     </section>
 
     <p class="cache">Créativité, spontanéité, expression.</p>
     <div class="bandeau" aria-hidden="true">
       <div class="bandeau__piste">
-        <span>Créativité <i>★</i> Spontanéité <i>★</i> Expression <i>★</i> Apprendre. Oser. Improviser. <i>★</i>&nbsp;</span>
-        <span>Créativité <i>★</i> Spontanéité <i>★</i> Expression <i>★</i> Apprendre. Oser. Improviser. <i>★</i>&nbsp;</span>
+        <span>Créativité <i>✶</i> Spontanéité <i>✶</i> Expression <i>✶</i> Apprendre <i>✶</i> Oser <i>✶</i> Improviser <i>✶</i>&nbsp;</span>
+        <span>Créativité <i>✶</i> Spontanéité <i>✶</i> Expression <i>✶</i> Apprendre <i>✶</i> Oser <i>✶</i> Improviser <i>✶</i>&nbsp;</span>
       </div>
     </div>
 
-    <section class="enonce">
-      <div class="conteneur etroit centre">
-        <h2 class="enonce__titre">Votre potentiel va bien au-delà de ce que vous imaginez.</h2>
-        <p class="enonce__texte">Des formations pour développer votre créativité, votre confiance et votre talent en improvisation.</p>
-      </div>
+    <section class="enonce conteneur">
+      <p class="etiquette">Créativité — Spontanéité — Expression</p>
+      <h2 class="enonce__texte">Votre potentiel va <em style="white-space:nowrap">bien au-delà</em> de ce que vous imaginez. Apprendre. Oser. Improviser.</h2>
     </section>
 
-    <section class="rangees conteneur">
-      <article class="rangee">
-        <figure><img src="images/kevik-portrait.jpg" alt="Kevik sur scène, éclairé d'une lumière rouge" width="1075" height="1276" loading="lazy"></figure>
-        <div class="rangee__texte">
-          <h2 class="titre">Qui suis-je&nbsp;?</h2>
-          <p class="chapeau">Apprendre auprès de quelqu'un qui a fait ses preuves.</p>
-          <p>Je suis Keven Perron, improvisateur, comédien et créateur de contenu humoristique connu sous le nom de Kevik.</p>
-          <a class="lien" href="qui-suis-je.html">Lire la suite</a>
-        </div>
-      </article>
-      <article class="rangee rangee--inverse">
-        <figure><img src="images/approche.jpg" alt="Kevik pointe vers le ciel pendant une improvisation sur scène" width="1075" height="712" loading="lazy"></figure>
-        <div class="rangee__texte">
-          <h2 class="titre">Mon approche</h2>
-          <p class="chapeau">Bien plus qu'apprendre à improviser.</p>
-          <p>Mon approche repose sur une conviction&nbsp;: chacun possède un potentiel qui ne demande qu'à être découvert et développé.</p>
-          <a class="lien" href="mon-approche.html">Lire la suite</a>
-        </div>
-      </article>
-      <article class="rangee">
-        <figure><img src="images/apprendre-2.jpg" alt="Deux improvisateurs en action pendant un match d'improvisation" width="597" height="312" loading="lazy"></figure>
-        <div class="rangee__texte">
-          <h2 class="titre">Formations</h2>
-          <p class="chapeau">Des formations adaptées à vos besoins.</p>
-          <p>Débutant, intermédiaire ou en perfectionnement, en individuel ou en groupe&nbsp;: vous choisissez vos objectifs, je construis le chemin pour les atteindre.</p>
-          <a class="lien" href="formations.html">Voir les formations</a>
-        </div>
-      </article>
+    <section class="tuiles conteneur" aria-label="Découvrir">
+      <a class="tuile" href="qui-suis-je.html">
+        <span class="tuile__photo"><img src="images/kevik-portrait.jpg" alt="Kevik sur scène, éclairé d'une lumière rouge" width="1075" height="1276" loading="lazy"></span>
+        <span class="tuile__titre">Qui suis-je&nbsp;? <span class="fleche" aria-hidden="true">↗</span></span>
+        <span class="tuile__texte">Apprendre auprès de quelqu'un qui a fait ses preuves.</span>
+      </a>
+      <a class="tuile" href="mon-approche.html">
+        <span class="tuile__photo"><img src="images/approche.jpg" alt="Kevik pointe vers le ciel pendant une improvisation sur scène" width="1075" height="712" loading="lazy"></span>
+        <span class="tuile__titre">Mon approche <span class="fleche" aria-hidden="true">↗</span></span>
+        <span class="tuile__texte">Bien plus qu'apprendre à improviser.</span>
+      </a>
+      <a class="tuile" href="formations.html">
+        <span class="tuile__photo"><img src="images/apprendre-2.jpg" alt="Deux improvisateurs en action pendant un match d'improvisation" width="597" height="312" loading="lazy"></span>
+        <span class="tuile__titre">Formations <span class="fleche" aria-hidden="true">↗</span></span>
+        <span class="tuile__texte">Des formations adaptées à vos besoins.</span>
+      </a>
     </section>
 
-    <section class="appel">
-      <div class="conteneur etroit centre">
-        <h2 class="grand-titre">Prêt à trouver l'étoile en vous&nbsp;?</h2>
-        <p class="chapeau">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
+    <section class="appel conteneur">
+      <div class="appel__boite">
+        <h2 class="h2">Prêt à trouver <em>l'étoile</em> en vous&nbsp;?</h2>
+        <p class="intro">Discutons de vos objectifs et construisons ensemble une formation adaptée à vos besoins.</p>
         <a class="btn" href="contact.html">Me contacter</a>
       </div>
     </section>
   </main>
 
   <footer class="pied">
-    <div class="conteneur pied__inner">
-      <a class="pied__logo" href="index.html">Kevik</a>
-      <nav class="pied__nav" aria-label="Pages du site">
-        <a href="index.html">Accueil</a>
-        <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
-        <a href="mon-approche.html">Mon approche</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Me contacter</a>
-      </nav>
-      <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
-    </div>
-    <div class="conteneur pied__bas">
-      <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
-      <p>Site web fait par Tony_quebec</p>
+    <div class="conteneur">
+      <div class="pied__haut">
+        <p class="pied__slogan">Trouvez <em>l'étoile</em> en vous.</p>
+        <a class="pied__courriel" href="mailto:improkevik@gmail.com">improkevik@gmail.com</a>
+      </div>
+      <div class="pied__milieu">
+        <a class="logo" href="index.html">Kevik<svg class="etoile" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 9.1H24l-7.4 5.4 2.9 9.1L12 18.2l-7.5 5.4 2.9-9.1L0 9.1h9.1z"/></svg></a>
+        <nav class="pied__nav" aria-label="Pages du site">
+          <a href="index.html">Accueil</a>
+          <a href="qui-suis-je.html">Qui suis-je&nbsp;?</a>
+          <a href="mon-approche.html">Mon approche</a>
+          <a href="formations.html">Formations</a>
+          <a href="contact.html">Me contacter</a>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span class="annee">2026</span> Kevik — Formations en improvisation. Tous droits réservés.</p>
+        <p>Site web fait par Tony_quebec</p>
+      </div>
     </div>
   </footer>
 
