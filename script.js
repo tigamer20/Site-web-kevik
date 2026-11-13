@@ -54,22 +54,6 @@
     elements.forEach(function (el) { el.classList.add("visible"); });
   }
 
-  /* ---------- Lien actif dans le menu ---------- */
-  var liens = Array.prototype.slice.call(document.querySelectorAll('.nav a:not(.btn)'));
-  var sections = liens
-    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
-    .filter(Boolean);
-  if ("IntersectionObserver" in window) {
-    var obsNav = new IntersectionObserver(function (entrees) {
-      entrees.forEach(function (entree) {
-        if (!entree.isIntersecting) return;
-        var id = "#" + entree.target.id;
-        liens.forEach(function (a) { a.classList.toggle("actif", a.getAttribute("href") === id); });
-      });
-    }, { rootMargin: "-45% 0px -50% 0px" });
-    sections.forEach(function (s) { obsNav.observe(s); });
-  }
-
   /* ---------- Copier le courriel ---------- */
   var copier = document.getElementById("copier");
   var statut = document.getElementById("copier-statut");
